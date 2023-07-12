@@ -14,11 +14,15 @@ body{
 }
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    gap: 200px;
     align-items: center;
     height: 70px;
     padding: 15px;
+    
+    
 }
+
 .left_part{
     display: flex;
     align-items: center;
@@ -81,14 +85,14 @@ body{
 .main_body{
     display: flex;
     height: calc(100vh - 70px);
+    overflow-y: scroll;
 }
 .sidebar{
     height: 100%;
     width: 270px;
+   
 }
-.sidebar:hover{
-    overflow-y: scroll;
-}
+
 .side_cont{
     display: flex;
     align-items: center;
@@ -175,3 +179,91 @@ body{
     color:#a7a7a7;
     font-size: 14px;
 }
+.vid_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+.vid_cat{
+    background-color: #eeeeee;
+    padding: 6px 10px ;
+    border: none;
+    border-radius:6px ;
+    font-size: 17px;
+    
+}
+.vid_cat:hover{
+    cursor: pointer;
+    background-color: #e3e3e3;
+
+}
+.all{
+    background-color: black;
+    color: white;
+}
+.all:hover{
+    background-color: black;
+}
+.vid_thumb img{
+    width: 400px;
+    border-radius: 20px;
+    
+}
+.vid_thumb{
+    position: relative;
+}
+
+
+.vid_time{
+    background-color: #0f0f0f;
+    display: inline;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    left: 350px;
+    bottom: 10px;
+
+
+}
+.mv_container{
+    margin-left: 30px;
+    margin-right: 3px;
+}
+.videos{
+    margin-top: 50px;
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    
+    
+}
+.icon_img img{
+    width: 50px;
+    border-radius: 50%;
+}
+.vid_description{
+    display: flex;
+    width: 400px;
+    gap: 12px;
+    margin-top: 10px;
+}
+.main_title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.title2{
+    margin-top: 6px;
+}
+.title2,.title3{
+    color: rgb(118, 118, 118);
+    
+}
+
+
